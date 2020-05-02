@@ -1,0 +1,152 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+    font-size:16px;
+    
+}
+
+
+.backdrop{
+display: none;
+background:rgba(240, 235, 235, 0.6);
+width: 100%;
+height: 100%;
+position:fixed;
+z-index:100;
+}
+
+#main-nav{
+    background:#0d440d;
+    color:white;
+    vertical-align: middle;
+    padding:10px 0;
+    width: 100%;
+    position: fixed;
+    
+    
+}
+
+.main_title{
+    display:inline-block;
+    font-size:20px;
+    padding: 5px;
+}
+
+.main_items{
+    list-style: none;
+    display:inline-block;
+    text-align: right;
+    width:calc(100% - 90px);
+    
+}
+
+.main-item{
+    display:inline-block;
+    margin:0 15px;
+}
+
+.main-item a{
+    display:inline-block;
+    color:white;
+    text-decoration: none;
+
+}
+
+
+.main-item a::first-letter{
+    font-size:20px;
+
+}
+
+.main-item a:hover,
+.main-item a:active{
+    color:#fafa03;
+    text-decoration: underline;
+}
+
+#background__image{
+    background-image: url('./img/fruit.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    width:100%;
+    height: 300px;
+  
+}
+
+.shops{
+  text-align: center;
+
+}
+
+.shop{
+    display:inline-block;
+    width:24%;
+    background:#b5ecb5;
+    padding:8px;
+    margin: 4px 4px;
+    text-align: center;
+    line-height: 24px;
+    border:solid 2px #0d440d;
+   
+    
+}
+
+.shop_name{
+     font-size:0.6rem;
+}
+
+
+.button{
+    margin-top:8px;
+    cursor: pointer;
+    background: #0d440d;
+    color:white;
+    padding:8px;
+    border:2px solid white;
+    border-radius: 16px;
+}
+
+
+.button:focus{
+    outline:none;
+}
+
+.button:hover,
+.button:active{
+    color:#0d440d;
+    background: white;
+    border:2px solid #0d440d;
+
+}
+
+
+.pop-up{
+    display: none;
+    width: 30%;
+    border:2px solid #0d440d;
+    padding:1rem;
+    text-align: center;
+    background:#b5ecb5;
+    border-radius: 1rem;
+    position: fixed;
+    z-index:200;
+    left:23rem;
+    bottom:15rem;
+}
+
+.pop-up_title{
+    margin-bottom: 0.6rem;
+}
+
+.pop-up_yes,
+.pop-up_no{
+    display: inline-block;
+    width:4rem;
+    padding: 0.2rem;
+    outline: none;
+    background:  #0d440d;
+    color:white;
+}
+
